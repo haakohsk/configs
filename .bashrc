@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# run neofetch at shell start
+neofetch
+
 alias skole="cd ~/Documents/skole/semester4 && ls -l"
 alias weather="~/Documents/priv/weather-shell/./weather-shell.sh"
 alias i3="cd ~/.config/i3"
