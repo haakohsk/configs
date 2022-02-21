@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # Personal configs
-exec feh --bg-scale ~/Downloads/abyss-by-me--1920×1080.jpg
+exec feh --bg-scale ~/images/orange.png
 
 exec xrandr --output DP-4 --mode 1920x1080 --rate 144.00
 
@@ -188,9 +188,31 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-	i3bar_command i3bar --transparency
-	#tray_output none
-	font pango:monospace 11
+#bar {
+#        status_command i3status
+#	i3bar_command i3bar --transparency
+#	#tray_output none
+#	font pango:monospace 11
+#}
+
+bar { 
+      font pango:agave, FontAwesome 11
+      status_command ~/.config/bumblebee-status/bumblebee-status \
+ -t  gruvbox \
+ -m  spotify datetime
+	colors {
+        background #000000
+        statusline #ffffff
+    }
+
 }
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #282828 #282828 #ffffff #000000   #000000
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #000000 #000000 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
