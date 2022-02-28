@@ -2,8 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# run neofetch at shell start
-neofetch
 
 alias skole="cd ~/Documents/skole/semester4 && ls -l"
 alias weather="~/Documents/priv/weather-shell/./weather-shell.sh"
@@ -133,3 +131,7 @@ fi
 #}
 # export PS1="\u@\h \[\033[36m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 #export PS1="\[\033[38;5;166m\]\u@\h:\[$(tput sgr0)\]\[\033[38;5;198m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\[\033[38;5;31m\]\w\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
