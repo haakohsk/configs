@@ -1,7 +1,7 @@
 " basic commands
 syntax on
 set number
-set relativenumber
+" set relativenumber
 
 " force use hjkl
 noremap <Up> <NOP>
