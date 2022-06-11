@@ -10,13 +10,23 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # Personal configs
-exec feh --bg-scale ~/images/orange.png
+exec feh --bg-scale ~/images/mountain1.jpg
 
 exec xrandr --output DP-4 --mode 1920x1080 --rate 144.00
 
 set $mod Mod4
 
-bindsym $mod+l exec /usr/bin/i3lock-fancy --font RobotoSlab-Light.ttf
+bindsym $mod+l exec betterlockscreen -l blur
+
+
+# betterlockscreen
+# set desktop background with custom effect
+#exec --no-startup-id betterlockscreen -w dim
+
+# Alternative (set last used background)
+# exec --no-startup-id source ~/.fehbg
+
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -56,7 +66,7 @@ bindsym $mod+q kill
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
 # bindsym $mod+d exec "rofi -combi-modi window,ssh,run -theme solarized -font 'hack 12' -show combi -icon-theme 'Papirus' -show-icons"
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlgb "$bg-color" -hlfg "#9575cd" -font "System San Fransisco Display 18"
+bindsym $mod+d exec rofi -show drun -show-icons -lines 3 -eh 1 -width 100 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlgb "$bg-color" -hlfg "#9575cd" -font "System San Fransisco Display 16"
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -209,6 +219,13 @@ bar {
     }
 
 }
+
+# polybar ?
+#bar {
+#	i3bar_command $HOME/.config/polybar/launch.sh
+#}
+
+
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #282828 #282828 #ffffff #000000   #000000
