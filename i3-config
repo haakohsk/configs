@@ -216,10 +216,10 @@ bindsym $mod+r mode "resize"
 #}
 
 bar { 
-      font pango:agave, FontAwesome 11
-      status_command ~/.config/bumblebee-status/bumblebee-status \
- -t  gruvbox \
- -m  spotify datetime
+      font pango:Inconsolata, FontAwesome 11
+      status_command /home/haakohsk/.config/bumblebee-status/bumblebee-status -t gruvbox-powerline -m spotify  memory nic date time
+
+	position bottom
 	colors {
         background #000000
         statusline #ffffff
