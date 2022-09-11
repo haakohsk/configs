@@ -3,7 +3,7 @@
 # for examples
 
 
-alias skole="cd ~/Documents/skole/semester4 && ls -l"
+alias skole="cd ~/Documents/skole/semester5 && ls -l"
 alias weather="~/Documents/priv/weather-shell/./weather-shell.sh"
 alias i3="cd ~/.config/i3"
 alias vpn="sudo openconnect -b vpn.ntnu.no"
@@ -84,7 +84,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    alias ls='exa -al --header --long --color=always --group-directories-first'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
