@@ -17,6 +17,8 @@ exec xrandr --output DP-0 --mode 1920x1080 --rate 144.00
 set $mod Mod4
 
 bindsym $mod+l exec betterlockscreen -l blur
+# take selection screenshot and save to folder
+bindsym --release Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mv $f ~/images/screenshots/'
 
 # hide title for windows
 for_window [class="^.*"] border pixel 2
@@ -52,7 +54,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -217,7 +219,7 @@ bindsym $mod+r mode "resize"
 
 bar { 
       font pango:Inconsolata, FontAwesome 11
-      status_command /home/haakohsk/.config/bumblebee-status/bumblebee-status -t gruvbox-powerline -m spotify  memory nic date time
+      status_command /home/haakohsk/.config/bumblebee-status/bumblebee-status -t gruvbox-powerline -m spotify memory nic time date dunstctl
 
 	position bottom
 	colors {
