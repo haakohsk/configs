@@ -1,6 +1,7 @@
 " basic commands
 syntax on
 set number
+set mouse=a
 set laststatus=2
 " set relativenumber
 
@@ -14,6 +15,7 @@ call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'https://github.com/ryanoasis/vim-devicons'
 call plug#end()
 
 colo gruvbox
