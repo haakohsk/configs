@@ -76,6 +76,7 @@ bindsym $mod+q kill
 # bindsym $mod+d exec --no-startup-id dmenu_run
 # bindsym $mod+d exec "rofi -combi-modi window,ssh,run -theme solarized -font 'hack 12' -show combi -icon-theme 'Papirus' -show-icons"
 bindsym $mod+d exec rofi -show drun -show-icons -lines 3 -eh 1 -width 100 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlgb "$bg-color" -hlfg "#9575cd" -font "System San Fransisco Display 16"
+bindsym $mod+i exec firefox
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
