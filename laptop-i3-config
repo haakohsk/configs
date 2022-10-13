@@ -13,7 +13,7 @@ exec ~/.screenlayout/./monitor.sh
 
 # dunst for notifications on startup
 exec --no-startup-id dunst
-exec feh --bg-scale ~/Pictures/wallpaper.jpg
+exec feh --bg-scale /home/skaufel/Pictures/wallpaper.jpg
 exec ~/Documents/priv/battery-script/battery.sh &
 
 # hide titles for windows
