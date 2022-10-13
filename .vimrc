@@ -17,6 +17,7 @@ set background=dark
 call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " toggle nerdtree
