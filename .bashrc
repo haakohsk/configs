@@ -10,7 +10,7 @@ alias vpn="sudo openconnect -b vpn.ntnu.no"
 alias managerVM="ssh ubuntu@10.212.136.251"
 alias volume100="amixer -D pulse sset Master 100%"
 alias volume50="amixer -D pulse sset Master 50%"
-alias ukenr="echo "week - month - year:" && curl -s https://ukenr.no/ | head -n 6 | grep -w "content" | sed 's/[A-Z]//g' | sed 's/[a-z]//g' | sed 's/[>]//g' | sed 's/["]//g' | sed 's/[<]//g' | sed 's/[=]//g' | sed 's/[.]//g'"
+alias ukenr="echo 'week - month - year:' && curl -s https://ukenr.no/ | head -n 6 | grep -w 'content' | sed 's/[A-Z]//g' | sed 's/[a-z]//g' | sed 's/[>]//g' | sed 's/[\"]//g' | sed 's/[<]//g' | sed 's/[=]//g' | sed 's/[.]//g'"
 
 # If not running interactively, don't do anything
 case $- in
