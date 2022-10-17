@@ -2,7 +2,9 @@
 syntax on
 set number
 set laststatus=2
+set expandtab shiftwidth=4 softtabstop=4
 " set relativenumber
+	
 
 " force use hjkl
 noremap <Up> <NOP>
