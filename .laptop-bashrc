@@ -13,6 +13,7 @@ alias i3="vim ~/.config/i3/config"
 alias school="cd ~/Documents/school/sem5"
 alias weather="~/Documents/priv/weather-shell/weather-shell.sh"
 alias neofetch="neofetch --ascii_distro popos_small"
+alias ukenr="date +'Det er uke: %U i %Y'"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
