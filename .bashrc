@@ -3,7 +3,7 @@
 # for examples
 
 
-alias skole="cd ~/Documents/skole/semester5 && ls -l"
+alias school="cd ~/Documents/skole/semester5 && ls -l"
 alias weather="~/Documents/priv/weather-shell/./weather-shell.sh"
 alias i3="cd ~/.config/i3"
 alias vpn="sudo openconnect -b vpn.ntnu.no"
@@ -11,6 +11,7 @@ alias managerVM="ssh ubuntu@10.212.136.251"
 alias volume100="amixer -D pulse sset Master 100%"
 alias volume50="amixer -D pulse sset Master 50%"
 alias ukenr="date +'Det er uke: %U i %Y'"
+alias etisk="cd ~/Documents/skole/semester5/etisk_hacking/ethical-hacking"
 
 # If not running interactively, don't do anything
 case $- in
