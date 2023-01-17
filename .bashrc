@@ -12,6 +12,7 @@ alias volume100="amixer -D pulse sset Master 100%"
 alias volume50="amixer -D pulse sset Master 50%"
 alias ukenr="date +'Det er uke: %U i %Y'"
 alias etisk="cd ~/Documents/skole/semester5/etisk_hacking/ethical-hacking"
+alias bachelor="cd ~/Documents/school/bachelor/63c68ad8d0a59cf6f075cd35"
 
 # If not running interactively, don't do anything
 case $- in
